@@ -4,6 +4,7 @@ html {
   text-size-adjust: 100%;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
+  color: #000;
 }
 
 *,
@@ -19,12 +20,12 @@ html {
 
 body {
   margin: 0;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  grid-template-columns: 1fr;
+  display: grid;
   grid-template-areas:
-    "header header nav"
-    "div div div"
-    "main main main"
+    "header"
+    "main";
 }
 
 img {
@@ -32,8 +33,22 @@ img {
   width: 100%;
 }
 
+h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+header h2 {
+  font-size: 1.125rem;
+  padding: 0;
+  margin: 0;
+}
+
 header {
   margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -41,12 +56,38 @@ nav {
   grid-row: 1;
 }
 
+a {
+  color: #3783a3;
+}
+
 ul {
   display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+header p {
+  max-width: 30em;
+  text-align: center;
+  font-size: 2rem;
+  border-top: .2rem solid #e2e2e2;
+  justify-content: center;
 }
 
 div {
   text-align: center;
+  justify-content: center;
+  margin: 1.5rem;
+  border-bottom: .2rem solid #e2e2e2;
+  border-top: .2rem solid #e2e2e2;
+}
+
+div i {
+  font-size: 2rem;
 }
 
 main {
@@ -54,8 +95,38 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
+  margin: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.125rem;
+  padding: 0;
+  margin: 0;
+}
+
+main p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+main a {
+  text-decoration: none;
+  border: .2rem solid #3783a3;
+  color: #3783a3;
+  padding: .5em 1em .6em;
+  border-radius: .3rem;
 }
 
 footer {
+  margin-top: 1.5rem;
   text-align: center;
+  font-size: 1rem;
+  border-top: .2rem solid #e2e2e2;
 }
