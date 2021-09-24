@@ -19,9 +19,43 @@ html {
 
 body {
   margin: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header nav"
+    "div div div"
+    "main main main"
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+header {
+  margin: 1.5rem;
+}
+
+nav {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+ul {
+  display: flex;
+}
+
+div {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+footer {
+  text-align: center;
 }
