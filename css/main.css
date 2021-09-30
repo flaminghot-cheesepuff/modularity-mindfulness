@@ -19,13 +19,25 @@ html {
 }
 
 body {
+  width: 1000px;
   margin: 0;
+  padding: 1.7rem;
+  padding-top: 1rem;
   align-items: center;
   grid-template-columns: 1fr;
   display: grid;
   grid-template-areas:
     "header"
     "main";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  padding-top: .5rem;
 }
 
 img {
@@ -40,20 +52,13 @@ h1 {
 }
 
 header h2 {
-  font-size: 1.125rem;
   padding: 0;
   margin: 0;
+  font-size: 1.125rem;
 }
 
-header {
-  margin: 1.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-nav {
-  grid-column: 2;
-  grid-row: 1;
+.header-banner {
+  padding-top: 1rem;
 }
 
 a {
@@ -67,23 +72,27 @@ ul {
 
 li {
   list-style-type: none;
-  padding: 1rem;
+  padding-left: 1rem;
+  font-size: 1.125rem;
 }
 
-header p {
-  max-width: 30em;
+.japanese-text {
+  width: 28rem;
   text-align: center;
-  font-size: 2rem;
-  border-top: .2rem solid #e2e2e2;
-  justify-content: center;
 }
 
-div {
+.words {
+  width: 30rem;
   text-align: center;
-  justify-content: center;
-  margin: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.text-container {
+  margin: auto;
   border-bottom: .2rem solid #e2e2e2;
   border-top: .2rem solid #e2e2e2;
+  margin-top: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 div i {
@@ -95,7 +104,6 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
-  margin: 1.5rem;
 }
 
 h2 {
@@ -114,6 +122,8 @@ main p {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
+  margin-left: 1rem;
+  padding-left: 0;
 }
 
 main a {
@@ -125,8 +135,15 @@ main a {
 }
 
 footer {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: .75rem;
   border-top: .2rem solid #e2e2e2;
+}
+
+main img {
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  height: 13.7rem;
+  width: 19rem;
 }
